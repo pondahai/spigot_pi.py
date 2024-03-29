@@ -9,12 +9,11 @@ def spigot_pi(digits):
 #             print(" :"+str(length)+" ", end="")
             if length == 1:
                 print(str(n)+".")
-            elif (length-2) % 5 == 0 :
+            elif (length-1) % 5 == 0 :
+                print(n, end ="")
                 print(" ", end ="")
-                print(n, end ="")
-            elif (length-1) % 50 == 0:
-                print(n, end ="")
-                print(": "+str(length-1)+"")
+                if (length-1) % 50 == 0:
+                    print(": "+str(length-1)+"")
             else:
                 print(n, end ="" )
                 
